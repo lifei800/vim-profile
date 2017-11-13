@@ -378,3 +378,7 @@ nmap <silent> <F4> :WMToggle<cr>
 " Config Calendar
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <silent> <F5> :Calendar<cr>
+
+
+
+ au BufRead,BufNewFile *.wpy setlocal filetype=vue.html.javascript.css
