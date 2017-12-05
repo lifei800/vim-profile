@@ -211,6 +211,13 @@ set guioptions-=m
 "隐藏工具栏
 set guioptions-=T
 
+"禁止显示滚动条
+set guioptions-=l  
+set guioptions-=L  
+set guioptions-=r  
+set guioptions-=R  
+
+
 " 可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
 set mouse=a
 set selection=exclusive
