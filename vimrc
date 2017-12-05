@@ -85,6 +85,8 @@ set showmatch
 "光标移动到buffer的顶部和底部时保持5行距离
 set scrolloff=5
 
+" 设置右侧竖线
+set cc=78
 
 set lbr
 
@@ -134,14 +136,11 @@ set incsearch
 "匹配括号的规则，增加针对html的<>
 set matchpairs=(:),{:},[:],<:>
 
-
-
 "分割窗口时保持相等的宽/高
 set equalalways
 
 "设置行距
 set linespace=5
-
 
 "自动换行
 set wrap
@@ -183,11 +182,6 @@ set expandtab
 " 在行和段开始处使用制表符
 set smarttab
 
-"高亮当前行样式
-set cursorline
-
-"高亮当前列样式
-set cursorcolumn
 
 "自动读取改变后的文件
 set autoread
@@ -217,7 +211,6 @@ set guioptions-=L
 set guioptions-=r  
 set guioptions-=R  
 
-
 " 可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
 set mouse=a
 set selection=exclusive
@@ -244,8 +237,6 @@ set history=100
 "置粘贴模式，这样粘贴就不会错位
 set paste
 
-
-
 " 增强模式中的命令行自动完成操作
 set wildmenu
 
@@ -254,6 +245,12 @@ let html_use_css=1
 
 "光标下划线
 "hi CursorLine    guifg=NONE    guibg=NONE    gui=underline
+
+"高亮当前行样式
+"set cursorline
+
+"高亮当前列样式
+set cursorcolumn
 
 " ambiwidth 默认值为 single。在其值为 single 时,
 " 若 encoding 为 utf-8，gvim 显示全角符号时就会
@@ -270,7 +267,6 @@ nmap wv     <C-w>v
 nmap wc     <C-w>c
 " 水平分割当前窗口
 nmap ws     <C-w>s
-
 
 "emmet 快捷键
 imap <c-e> <c-y>,
@@ -323,6 +319,7 @@ if has("gui_running")
   colorscheme molokai
 else
   colorscheme default
+  set cursorcolumn!
   "set cursorline!
 endif
 
