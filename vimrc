@@ -74,7 +74,7 @@ set fillchars=vert:\ ,stl:\ ,stlnc:\
 set keymodel=startsel
 
 " 禁用swf交换文件
-setlocal noswapfile
+set noswapfile
 
 "没有声音
 "set novisualbell
@@ -318,7 +318,7 @@ set t_Co=256
 if has("gui_running")
   colorscheme molokai
 else
-  colorscheme default
+  colorscheme Tomorrow-Night-Bright
   set cursorcolumn!
   "set cursorline!
 endif
