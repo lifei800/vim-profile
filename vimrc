@@ -1,11 +1,8 @@
-
-
 execute pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  默认编码设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 language messages zh_CN.utf-8
 
 set encoding=utf-8
@@ -15,7 +12,6 @@ set langmenu=zh_CN.UTF-8
 set fileencodings=utf-8,ucs-bom,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 set helplang=cn
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 文本格式和排版
@@ -36,7 +32,6 @@ set noimd
 
 " 在状态行显示目前所执行的命令，未完成的指令片段亦会显示出来
 set showcmd
-
 
 " 在切换buffer时自动保存当前文件
 set autowrite
@@ -64,7 +59,6 @@ set confirm
 set gdefault
 
 set nocompatible
-
 
 " 在被分割的窗口间显示空白，便于阅读
 set fillchars=vert:\ ,stl:\ ,stlnc:\
@@ -181,7 +175,6 @@ set expandtab
 
 " 在行和段开始处使用制表符
 set smarttab
-
 
 "自动读取改变后的文件
 set autoread
